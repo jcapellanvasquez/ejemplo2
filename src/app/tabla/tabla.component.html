@@ -1,0 +1,20 @@
+<table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">name</th>
+      <th scope="col">username</th>
+      <th scope="col">email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let i of users$ | async">
+      <th scope="row">{{ i.id }}</th>
+      <td>
+        {{i.name}}
+      </td>
+      <td>{{ i.username }}</td>
+      <td>{{ i.email }}</td>
+    </tr>
+    </tbody>
+  </table>
