@@ -10,10 +10,17 @@ import { Observable } from 'rxjs';
 export class TablaComponent implements OnInit {
   public users$: Observable<any>;
   constructor(public appService: AppService) {
-    this.users$ = this.appService.getUsers()
+    this.users$ = this.appService.getMyUsers()
    }
 
   ngOnInit() {
+
+    this.appService.setUser(
+      "angular",
+      "angular",
+      "angular",
+      "angular"
+    )
   }
 
 }

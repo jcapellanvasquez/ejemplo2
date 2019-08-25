@@ -11,10 +11,10 @@
     <tr *ngFor="let i of users$ | async">
       <th scope="row">{{ i.id }}</th>
       <td>
-        {{i.name}}
+        {{i.nombre}}
       </td>
-      <td>{{ i.username }}</td>
-      <td>{{ i.email }}</td>
+      <td>{{ i.usuario }}</td>
+      <td>{{ i.correo }}</td>
     </tr>
     </tbody>
   </table>
