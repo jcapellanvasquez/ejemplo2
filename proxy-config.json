@@ -1,6 +1,7 @@
 {
-    "*": {
-        "target": "http://localhost/",
-        "secure": false
+    "/api": {
+        "target": "http://localhost:80/codeigniter/public/",
+        "secure": false,
+        "changeOrigin": true
     }
 }

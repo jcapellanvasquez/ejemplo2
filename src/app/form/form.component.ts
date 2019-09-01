@@ -18,10 +18,28 @@ export class FormComponent implements OnInit {
   }
 
   add() {
-    this.appService.persona = {
-      nombre: this.nombre,
-      apellido: this.apellido
-    }
+    // this.appService.persona = {
+    //   nombre: this.nombre,
+    //   apellido: this.apellido
+    // }
+
+    this.appService.setUser2(
+      "Usuario1",
+      "Usuario1",
+      "Usuario1",
+      "Usuario1"
+    ).subscribe(
+      (next) => {
+        console.log("Registro exitoso")
+        this.appService.users$ = this.appService.getMyUsers()
+      },
+      (error) => {
+        console.log("Ocurrio un error")
+      },
+      () => { // complete
+        console.log("Registro completado")
+      }
+    )
   }
 
 }
