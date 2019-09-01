@@ -9,12 +9,20 @@ from './ng-boostrap-shared/ng-boostrap-shared.module';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
 import { TablaComponent } from './tabla/tabla.component';
+import { ListaComponent } from './lista/lista.component';
+import { MantenimientoComponent } from './mantenimiento/mantenimiento.component';
+import { Lista1Component } from './lista1/lista1.component';
+import { Lista2Component } from './lista2/lista2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    TablaComponent
+    TablaComponent,
+    ListaComponent,
+    MantenimientoComponent,
+    Lista1Component,
+    Lista2Component
   ],
   imports: [
     BrowserModule,
